@@ -8,3 +8,4 @@ brew install watchman
 npm start
 
 # 4. Press 'i' for iOS or 'w' for web
+*************************************
