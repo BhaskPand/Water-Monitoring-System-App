@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "KLS App",
+    "slug": "kls-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0A2342"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.klstech.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A2342"
+      },
+      "package": "com.klstech.app"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+  }
+}
+
