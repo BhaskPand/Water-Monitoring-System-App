@@ -29,10 +29,10 @@ const ChartCard: React.FC<Props> = ({ title, data, labels }) => {
           backgroundGradientFrom: colors.card,
           backgroundGradientTo: colors.card,
           decimalPlaces: 0,
-          color: (opacity = 1) => `${colors.textPrimary}${Math.round(opacity * 255).toString(16)}`,
+          color: (opacity = 1) => gradients.primary[0] + Math.round(opacity * 255).toString(16).padStart(2, '0'),
           labelColor: () => colors.textSecondary,
-          propsForDots: { r: '4', strokeWidth: '2', stroke: gradients.primary[0] },
-          propsForBackgroundLines: { stroke: colors.border },
+          propsForDots: { r: '4', strokeWidth: '3', stroke: gradients.primary[1], fill: colors.card },
+          propsForBackgroundLines: { stroke: colors.border, strokeDasharray: '4' },
         }}
         bezier
         style={{ marginVertical: 8, borderRadius: 12 }}
@@ -44,10 +44,14 @@ const ChartCard: React.FC<Props> = ({ title, data, labels }) => {
 const styles = StyleSheet.create({
   card: {
     padding: 16,
-    borderRadius: 16,
+    borderRadius: 20,
     borderWidth: 1,
+    shadowColor: '#0F172A',
+    shadowOpacity: 0.04,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 4 },
   },
-  title: { fontSize: 16, fontWeight: '700' },
+  title: { fontSize: 15, fontWeight: '600', letterSpacing: 0.3, marginBottom: 8 },
 });
 
 export default ChartCard;

@@ -1,25 +1,27 @@
 export const gradients = {
-  primary: ['#0A84FF', '#0F52BA', '#0A2342'] as const,
-  accent: ['#22C55E', '#0EA5E9'] as const,
+  // Soft, realistic beautiful water gradients instead of neon
+  primary: ['#38BDF8', '#0284C7', '#0369A1'] as const,
+  // Subtle elegant accent
+  accent: ['#0EA5E9', '#0369A1'] as const,
 };
 
 export const lightColors = {
-  background: '#F3F6FB',
+  background: '#F8FAFC', // Slate 50
   card: '#FFFFFF',
-  textPrimary: '#0A1F44',
-  textSecondary: '#5A6C8A',
-  border: '#E4E9F2',
-  accent: '#22C55E',
-  warning: '#F97316',
+  textPrimary: '#0F172A', // Slate 900
+  textSecondary: '#64748B', // Slate 500
+  border: '#E2E8F0', // Slate 200
+  accent: '#0284C7', // Sky 600
+  warning: '#D97706', // Amber 600
 };
 
 export const darkColors = {
-  background: '#0B1221',
-  card: '#11182A',
-  textPrimary: '#E6ECF5',
-  textSecondary: '#9AACCE',
-  border: '#1D2A44',
-  accent: '#22C55E',
-  warning: '#FB923C',
+  background: '#0F172A', // Slate 900
+  card: '#1E293B', // Slate 800
+  textPrimary: '#F8FAFC', // Slate 50
+  textSecondary: '#94A3B8', // Slate 400
+  border: '#334155', // Slate 700
+  accent: '#38BDF8', // Sky 400
+  warning: '#F59E0B', // Amber 500
 };
 
